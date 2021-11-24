@@ -13,10 +13,7 @@ const todoSchema: mongoose.Schema = new mongoose.Schema({
     type: Boolean,
     default: false
   },
-  createdAt: {
-    type: Date
-  }
-})
+}, { timestamps: true })
 
 const TodoList = mongoose.model('TodoList', todoSchema)
 
