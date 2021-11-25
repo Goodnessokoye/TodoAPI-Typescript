@@ -15,7 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', routes);
 
-// app.listen(port, ()=>{console.log(`Application is listening on port ${port}`)})
 
 const start = async () => {
   try {
